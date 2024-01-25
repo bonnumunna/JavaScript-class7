@@ -76,7 +76,7 @@ var result = arithmetic(7, 13, '-');
 
 // document.body.append(result);
 
-// ************ Variable Function
+// ************ Variable Function ****************
 var addNumber = function(num1 = 0, num2 = 0) {
     if (num1 == 0 && num2 == 0) {
         return "Please insert a number";
@@ -89,25 +89,48 @@ var result = addNumber(3, 4);
 // console.log(result);
 
 
-function calculateArea(sideA = 1, sideB = 1, sideC = 1, shape) {
+function calculateArea(shape, sideA = 1, sideB = 1, sideC = 1) {
     switch (shape) {
         case "triangle":
             var area = 0.5 * sideA * sideB;
-            return area;
+            return area + "m2";
             break;
         case "circle":
             var area = (22 / 7) * sideA * sideA;
-            return area;
+            return area + "m2";
             break;
         case "rectangle":
             var area = sideA * sideB;
-            return area;
+            return area + "m2";
             break;
         case "trapezium":
-            var area = 0.5(sideA + sideB) * sideC;
-            return area;
+            var area = 0.5 * (sideA + sideB) * sideC;
+            return area + "m2";
             break;
         default:
             return "Shape not recognized";
     }
 }
+
+var result = calculateArea('trapezium', 7, 11, 8);
+// console.log("The area is=", result);
+
+
+// ================ SOME INBUILT FUNCTIONS ================
+// Inbuilt with callback
+/*
+setTimeout(() => {
+    console.log("Welcome to class...");
+}, 3000);
+
+var myInterval = setInterval(() => {
+    console.log("I love JavaScript");
+}, 2000);
+
+// clearInterval(myInterval);
+*/
+
+// ============== SELF - CALLING FUNCTION =============
+(() => {
+    console.log("It's good to smile always... when you're not angry.");
+})();
