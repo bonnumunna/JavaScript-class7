@@ -86,4 +86,28 @@ var addNumber = function(num1 = 0, num2 = 0) {
 }
 
 var result = addNumber(3, 4);
-console.log(result);
+// console.log(result);
+
+
+function calculateArea(sideA = 1, sideB = 1, sideC = 1, shape) {
+    switch (shape) {
+        case "triangle":
+            var area = 0.5 * sideA * sideB;
+            return area;
+            break;
+        case "circle":
+            var area = (22 / 7) * sideA * sideA;
+            return area;
+            break;
+        case "rectangle":
+            var area = sideA * sideB;
+            return area;
+            break;
+        case "trapezium":
+            var area = 0.5(sideA + sideB) * sideC;
+            return area;
+            break;
+        default:
+            return "Shape not recognized";
+    }
+}
