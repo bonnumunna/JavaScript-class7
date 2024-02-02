@@ -15,7 +15,7 @@
 
 /*
 const setValue = 10;
-var currentValue = 1;
+var currentValue = 51;
 while (currentValue <= setValue) {
     console.log(currentValue); // Print the current value
 
@@ -23,6 +23,54 @@ while (currentValue <= setValue) {
     // currentValue += 1
     currentValue++; // Increment current value by 1
 } // This loop will print from 1 to 10
+ */
+
+// CLASS WORK: Write a While loop that prints from 20 to 15
+
+/* ============== DO...WHILE LOOP ================ 
+    This loop will run at least once even when the condition is false.
+
+const setVal = 5;
+var currentVal = 1;
+do {
+    // code to run
+    console.log(currentVal);
+    currentVal++;
+
+} while (currentVal <= setVal);
+
 */
 
-// Write a While loop that prints from 20 to 15
+/*
+    ============== FOR LOOP ==============
+    There are other enhancement of the for loop: e.g. forEach and shorthand for loop.
+    For loop is one of the most useful loops in JavaScript
+    
+    for (var i = 0; i <= 5; i++) {
+        // code to run based on above start, coditon and change 
+        console.log(i);
+    }
+*/
+
+/* ============= BREAKING AND SKIPPING VALUES IN LOOPS ================ 
+    The above is achieved using 
+    i.  break statement
+    ii. continue statement
+    
+    for (var i = 1; i <= 10; i++) {
+        // code to run based on above start, coditon and change 
+        console.log(i);
+        if (i == 5) {
+            break; // Terminates the loop at value 5
+        }
+    }
+*/
+
+
+for (var i = 10; i <= 20; i++) {
+    // code to run based on above start, coditon and change 
+    if (i == 15) {
+        continue; // Skip the loop at value 15
+    }
+    console.log(i);
+}
