@@ -1,6 +1,6 @@
 /*
     Almost everything in JavaScript is an object and here lies its power as a programming language.
-    Basically objects are name-value pairs, bounded by curly brace. They help to arrange information (properties and functions) of an entity.
+    Basically objects are name-value pairs, bounded by curly brace. This is referred to as, 'Object Literal'. They help to arrange data (as properties and methods) of an entity.
 */
 
 const person = {
